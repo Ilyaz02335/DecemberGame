@@ -1167,9 +1167,9 @@ $(document).ready(function() {
 			});
 */
 // Instead as a fallback, download as ArrayBuffer. (TODO: Figure out the bugs with the above, and switch to using that one instead)
-			fetchOrDownloadAndStore(db, Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/p3w07frr1qlu8t72zgx7i/MyProject4-HTML5-Shipping.data?rlkey=55b6xaqpwz2jhhlrz54heat0r&dl=0'), 'arraybuffer').then(function(dataArrayBuffer) {
+			fetchOrDownloadAndStore(db, Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/rnrcrl5d8jkh9mssnynze/MyProject4-HTML5-Shipping.data?rlkey=il9ytv0nh4unuid0hrih156sq&dl=0'), 'arraybuffer').then(function(dataArrayBuffer) {
 				Module['preloadedPackages'] = {};
-				Module['preloadedPackages'][Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/p3w07frr1qlu8t72zgx7i/MyProject4-HTML5-Shipping.data?rlkey=55b6xaqpwz2jhhlrz54heat0r&dl=0')] = dataArrayBuffer;
+				Module['preloadedPackages'][Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/rnrcrl5d8jkh9mssnynze/MyProject4-HTML5-Shipping.data?rlkey=il9ytv0nh4unuid0hrih156sq&dl=0')] = dataArrayBuffer;
 				return dataJsDownload.then(addScriptToDom);
 			});
 
